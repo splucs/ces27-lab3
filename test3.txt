@@ -1,0 +1,48 @@
+C:\Users\Lucas Franca\Documents\CES-27\Lab5\ces27-lab3>go run run.go -id 1
+2017/12/08 02:20:32 [SERVER] Listening on 'localhost:3001'
+2017/12/08 02:20:32 [FOLLOWER 0] Run Logic.
+2017/12/08 02:20:32 [SERVER] Accepting connections.
+2017/12/08 02:20:34 [FOLLOWER 0] Election timeout.
+2017/12/08 02:20:34 [CANDIDATE 0] Run Logic.
+2017/12/08 02:20:34 [CANDIDATE 1] Running for term '1'.
+2017/12/08 02:20:35 [CANDIDATE 1] Vote granted by 'localhost:3005'.
+2017/12/08 02:20:35 [CANDIDATE 1] VoteCount: 2
+2017/12/08 02:20:35 [CANDIDATE 1] Vote granted by 'localhost:3004'.
+2017/12/08 02:20:35 [CANDIDATE 1] VoteCount: 3
+2017/12/08 02:20:35 [LEADER 1] Run Logic.
+exit status 2
+
+C:\Users\Lucas Franca\Documents\CES-27\Lab5\ces27-lab3>go run run.go -id 2
+2017/12/08 02:20:32 [SERVER] Listening on 'localhost:3002'
+2017/12/08 02:20:32 [FOLLOWER 0] Run Logic.
+2017/12/08 02:20:32 [SERVER] Accepting connections.
+2017/12/08 02:20:35 [FOLLOWER 1] Vote granted to 'localhost:3001' for term '1'.
+2017/12/08 02:20:46 [FOLLOWER 1] Election timeout.
+2017/12/08 02:20:46 [CANDIDATE 1] Run Logic.
+2017/12/08 02:20:46 [CANDIDATE 2] Running for term '2'.
+2017/12/08 02:20:47 [CANDIDATE 2] Vote granted by 'localhost:3003'.
+2017/12/08 02:20:47 [CANDIDATE 2] VoteCount: 2
+2017/12/08 02:20:47 [CANDIDATE 2] Vote granted by 'localhost:3004'.
+2017/12/08 02:20:47 [CANDIDATE 2] VoteCount: 3
+2017/12/08 02:20:47 [LEADER 2] Run Logic.
+
+C:\Users\Lucas Franca\Documents\CES-27\Lab5\ces27-lab3>go run run.go -id 3
+2017/12/08 02:20:33 [SERVER] Listening on 'localhost:3003'
+2017/12/08 02:20:33 [FOLLOWER 0] Run Logic.
+2017/12/08 02:20:33 [SERVER] Accepting connections.
+2017/12/08 02:20:35 [FOLLOWER 1] Vote granted to 'localhost:3001' for term '1'.
+2017/12/08 02:20:47 [FOLLOWER 2] Vote granted to 'localhost:3002' for term '2'.
+
+C:\Users\Lucas Franca\Documents\CES-27\Lab5\ces27-lab3>go run run.go -id 4
+2017/12/08 02:20:33 [SERVER] Listening on 'localhost:3004'
+2017/12/08 02:20:33 [FOLLOWER 0] Run Logic.
+2017/12/08 02:20:33 [SERVER] Accepting connections.
+2017/12/08 02:20:35 [FOLLOWER 1] Vote granted to 'localhost:3001' for term '1'.
+2017/12/08 02:20:47 [FOLLOWER 2] Vote granted to 'localhost:3002' for term '2'.
+
+C:\Users\Lucas Franca\Documents\CES-27\Lab5\ces27-lab3>go run run.go -id 5
+2017/12/08 02:20:34 [SERVER] Listening on 'localhost:3005'
+2017/12/08 02:20:34 [FOLLOWER 0] Run Logic.
+2017/12/08 02:20:34 [SERVER] Accepting connections.
+2017/12/08 02:20:35 [FOLLOWER 1] Vote granted to 'localhost:3001' for term '1'.
+2017/12/08 02:20:47 [FOLLOWER 2] Vote granted to 'localhost:3002' for term '2'.
